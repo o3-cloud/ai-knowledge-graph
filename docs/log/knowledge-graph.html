@@ -1624,7 +1624,7 @@
                     ` : ''}
                     <div class="entry-actions">
                         <button onclick="togglePreview('${entry.id}')" class="btn-preview" id="btn-${entry.id}">Show Preview</button>
-                        <a href="${entry.filepath}" target="_blank" class="btn-view-full">View Full Entry</a>
+                        <a href="https://github.com/o3-cloud/ai-knowledge-graph/blob/main/${entry.filepath.replace(/^file:\/\/.*?\/docs\/log\//, 'docs/log/')}" target="_blank" class="btn-view-full">View Full Entry</a>
                     </div>
                 </div>
             `).join('');
